@@ -117,7 +117,7 @@ class _AddFoodPageState extends State<AddFoodPage> {
                 await NotificationService().rescheduleExpiryAlerts();
                 await NotificationService().showNow(
                   title: 'NourishPal',
-                  body: 'Hello from local notifications!',
+                  body: 'You will get notify when expired!',
                 );
                 if (context.mounted) context.go('/home');
               },
